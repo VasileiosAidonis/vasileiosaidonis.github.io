@@ -10,23 +10,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}  
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-
-
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 10vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -46,7 +32,7 @@ html {
   padding: 6px 8px 6px 26px;
   font-family: "Times New Roman";
   text-decoration: none;
-  font-size: 30px;
+  font-size: 1.4vw;
   color: #F0F0F0;
   background-color: #151515;
   display: block;
@@ -58,29 +44,17 @@ html {
 }
 
 .main {
-  margin-left: 220px;
+  margin-left: 10vw;
   padding: 0px 10px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-div[class^='col-lg'] div[class^='h3'] {
-  margin:20px 10% 0px 15%;
-  padding:15px;
-  color:  #91111E;
-  text-align:center;
-  font-weight: 600;
-}
 
 div[class^='col-lg'] div[class^='h4'] {
   margin:20px 0px 0px 12%;
   padding: 0px 20px 15px 30px;
   color: #151515;
   background-color: #F2EDD7FF;
-  font-size:130%;
+  font-size:1.1vw;
   font-family: "NeuzeitOfficeW01-Regula";
   letter-spacing: 1.1px;
 }
@@ -199,7 +173,7 @@ div[class^='box']  {
 }
 
 .quotes {
-  font-size:350%;
+  font-size:2.8vw;
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #91111E;
@@ -208,7 +182,7 @@ div[class^='box']  {
 }
 
 .quotes2 {
-  font-size:300%;
+  font-size:2.5vw;
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #91111E;
