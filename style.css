@@ -19,8 +19,7 @@ html {
   left: 0;
   background-color: #151515;
   overflow-x: hidden;
-  padding-top: 50px;
-  /* border-left: 20px solid #3D2D22; */
+  padding-top: 3vw;
   border-right: 2px solid #333;
 
 }
@@ -29,7 +28,7 @@ html {
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 26px;
+  padding: 0.4vw 1vw 0.4vw 1.5vw;
   font-family: "Times New Roman";
   text-decoration: none;
   font-size: 1.4vw;
@@ -45,41 +44,34 @@ html {
 
 .main {
   margin-left: 10vw;
-  padding: 0px 10px;
+  padding: 0vw 0.5vw;
 }
 
 
 div[class^='col-lg'] div[class^='h4'] {
-  margin:20px 0px 0px 12%;
-  padding: 0px 20px 15px 30px;
+  margin:2vw 0vw 0vw 5.5vw;
+  padding: 0px 1vw 1vw 2vw;
   color: #151515;
   background-color: #F2EDD7FF;
   font-size:1.1vw;
   font-family: "NeuzeitOfficeW01-Regula";
-  letter-spacing: 1.1px;
+  letter-spacing: 0.06vw;
 }
 
-.image-hobbies {
-  margin:20px 0px 0px 150px;
-}
-
-.image-me {
-  margin:100px 0px 0px 150px;
-}
 
 .progressbar  {
   position: relative;
   width: 27vw;
-  height: 20px;
+  height: 1.2vw;
   border: 2px  solid #9B8208;
-  border-radius: 20px;
-  margin-top: -25px;
-  margin-left: 110px;
+  border-radius: 1.2vw;
+  margin-top: -1.4vw;
+  margin-left: 6vw;
 }
 
 .progressbar span {
   position: absolute;
-  border-radius: 20px;
+  border-radius: 1.2vw;
   top: 0px;
   left: 0px;
   width: 10%;
@@ -91,48 +83,42 @@ div[class^='col-lg'] div[class^='h4'] {
 .progressbar span.bar_html {
   position: absolute;
   right: 3px;
-  top: -29px;
+  top: -2vw;
   font-weight: bold;
   color: #fff;
-  font-size: 18px;
-
 }
 
 .progressbar span.bar_css {
   position: absolute;
   right: 3px;
-  top: -29px;
+  top: -2vw;
   font-weight: bold;
   color: #fff;
-  font-size: 18px;
 }
 
 .progressbar span.bar_javascript {
   position: absolute;
   right: 3px;
-  top: -29px;
+  top: -2vw;
   font-weight: bold;
   color: #fff;
-  font-size: 18px;
 }
 
 .progressbar span.bar_php {
   position: absolute;
   right: 30px;
-  top: -29px;
+  top: -2vw;
   font-weight: bold;
   color: #fff;
-  font-size: 18px;
   transition: all 0.001s ease-in-out;
 }
 
 .progressbar span.python {
   position: absolute;
   right: 3px;
-  top: -29px;
+  top: -2vw;
   font-weight: bold;
   color: #fff;
-  font-size: 18px;
 }
 
 
@@ -141,11 +127,11 @@ div[class^='col-lg'] div[class^='h4'] {
 */
 div[class^='box']  {
   background-color: transparent;
-  width: 90px;
+  width: 5vw;
   height: 33px;
   border: none;
   perspective: 1000px;
-  font-size: 110%;
+  font-size: 1.1vw;
 }
 
 .box-in {
@@ -177,7 +163,7 @@ div[class^='box']  {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #91111E;
-  padding:20px 40px 40px 80px;
+  padding:1.3vw 2.5vw 2.5vw 4vw;
   font-family:"Times New Roman";
 }
 
@@ -186,12 +172,12 @@ div[class^='box']  {
   font-weight: 600;
   text-decoration: underline;
   text-decoration-color: #91111E;
-  padding:20px 40px 40px 70px;
+  padding:1.3vw 2.5vw 2.3vw 3.8vw;
   font-family:"Times New Roman";
 }
 
 .the_text {
-  letter-spacing: 0.8px;
+  letter-spacing: 0.2vw;
   font-family: italic;
   color:#91111E;
   font-size:125%;
@@ -265,7 +251,7 @@ div[class^='first_row'] {
 
 .gallery img[class^='move']:hover  {
 		transform: translate(-300px, 0);
-    transition-delay: 0s;
+    transition-delay: 0.3s;
 }
 
 /* .back {
