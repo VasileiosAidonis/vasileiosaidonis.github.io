@@ -13,9 +13,37 @@
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    main { width:100%; }
-    .sidenav { width:100%; margin:0; border:none; }
+@media screen and (max-width: 850px) {
+    .main { width:80% !important; margin-left:20% !important; position:fixed !important;}
+    .sidenav { width:20% !important; }
+    .sidenav a { font-size:18px !important; }
+    .quotes2 { width:90% !important; padding-left: 30px !important; font-size: 20px !important;}
+    .quotes { width:90% !important; font-size: 27px !important; }
+    .h4 { width:90% !important; font-size: 15px !important; }
+    .progressbar { width:80% !important; }
+    .box-front { font-size: 15px !important; margin:25px 0px 0px 65px; }
+    div[class^='second_bar'] { margin:-25px 0px 0px 100px !important; width: 100% !important;}
+    div[class^='skills_text'] div[class^='h4']{ width:200% !important; }
+    .gallery, .gallery img { height: 150px !important; width:250px !important;}
+    .gallery { margin:30px -20px 0px 80px !important;}
+    .gallery img[class^='move'] { margin-top: -150px !important; }
+    .col-sm span { font-size: 18px !important; }
+    .gallery img[class^='move']:hover {transform: translate(-250px, 0) !important; }
+
+    .contact_first div[class^='quotes2']{ display: none !important; }
+    .contact_box { width:550px !important; margin-top:100px !important; }
+    span[class^='contact_text'] { font-size: 20px !important; margin-top: 50px !important; }
+    .reachme img {height: 60px !important; }
+
+    .reachme a { padding-right:2.8vw;}
+
+    .contact_second { margin:150px 100px 0px -50% !important; width:60% !important;
+                      background-color: transparent !important;}
+    .contact_second svg { height: 130px !important; margin:0px 0px 0px -80px !important;
+                          background-color: transparent !important; }
+    .contact_second div[class^='h4'] { font-size:18px !important; margin:-120px 0px 0px 70px !important; }
+    .contact_second div[class^='h4'] span[class^='the_text'] {font-size:40px !important; }
+
 }
 
 
@@ -33,7 +61,7 @@ html {
   background-color: #151515;
   overflow-x: hidden;
   padding-top: 3vw;
-  border-right: 2px solid #333;
+  border-right: 1px solid #333;
 
 }
 .sidenav li {
@@ -52,6 +80,8 @@ html {
 
 .sidenav a:hover {
   color: #F2EDD7FF;
+  font-size: 1.45vw;
+  background-color: rgba(145, 17, 30, 0.3);
   text-decoration: none;
 }
 
@@ -73,12 +103,11 @@ div[class^='col-lg'] div[class^='h4'] {
 
 .progressbar  {
   position: relative;
-  width: 27vw;
+  width: 14vw;
   height: 20px;
   border: 2px  solid #9B8208;
   border-radius: 1.2vw;
   margin-top: -1.4vw;
-  margin-left: 6vw;
 }
 
 .progressbar span {
@@ -92,9 +121,9 @@ div[class^='col-lg'] div[class^='h4'] {
   transition: all 0.001s ease-in-out;
 }
 
+
 .progressbar span.bar_html {
   position: absolute;
-  right: 3px;
   top: -2vw;
   font-weight: bold;
   color: #fff;
@@ -102,7 +131,6 @@ div[class^='col-lg'] div[class^='h4'] {
 
 .progressbar span.bar_css {
   position: absolute;
-  right: 3px;
   top: -2vw;
   font-weight: bold;
   color: #fff;
@@ -110,7 +138,6 @@ div[class^='col-lg'] div[class^='h4'] {
 
 .progressbar span.bar_javascript {
   position: absolute;
-  right: 3px;
   top: -2vw;
   font-weight: bold;
   color: #fff;
@@ -118,7 +145,6 @@ div[class^='col-lg'] div[class^='h4'] {
 
 .progressbar span.bar_php {
   position: absolute;
-  right: 30px;
   top: -2vw;
   font-weight: bold;
   color: #fff;
@@ -127,7 +153,6 @@ div[class^='col-lg'] div[class^='h4'] {
 
 .progressbar span.python {
   position: absolute;
-  right: 3px;
   top: -2vw;
   font-weight: bold;
   color: #fff;
@@ -143,7 +168,7 @@ div[class^='box']  {
   height: 33px;
   border: none;
   perspective: 1000px;
-  font-size: 1.1vw;
+  font-size: 1.3vw;
 }
 
 .box-in {
