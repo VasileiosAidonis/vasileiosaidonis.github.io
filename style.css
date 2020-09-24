@@ -14,42 +14,67 @@
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 850px) {
-    .main { width:80% !important; margin-left:20% !important; position:fixed !important;}
+
+    body { height: auto !important; overflow-y: scroll !important; }
+    .main { width:82% !important; height: auto !important; margin-left:20% !important; }
     .sidenav { width:20% !important; }
-    .sidenav a { font-size:18px !important; }
+    .sidenav a { font-size:17px !important; }
     .quotes2 { width:90% !important; padding-left: 30px !important; font-size: 20px !important;}
     .quotes { width:90% !important; font-size: 27px !important; }
-    .h4 { width:90% !important; font-size: 15px !important; }
+    .h4 { width:90% !important; font-size: 14px !important; }
     .progressbar { width:80% !important; }
-    .box-front { font-size: 15px !important; margin:25px 0px 0px 65px; }
+    .box-front { font-size: 15px !important; margin:25px 0px 0px 60px !important; }
+    .box:hover .box-in { transform: none !important ; }
+    .box-back { display: none !important; }
     div[class^='second_bar'] { margin:-25px 0px 0px 100px !important; width: 100% !important;}
     div[class^='skills_text'] div[class^='h4']{ width:200% !important; }
     .gallery, .gallery img { height: 150px !important; width:250px !important;}
     .gallery { margin:30px -20px 0px 80px !important;}
     .gallery img[class^='move'] { margin-top: -150px !important; }
-    .col-sm span { font-size: 18px !important; }
+    .col-sm span { font-size: 20px !important; margin-left:100px !important; }
+    .col-sm label { margin:0px !important; }
     .gallery img[class^='move']:hover {transform: translate(-250px, 0) !important; }
 
     .contact_first div[class^='quotes2']{ display: none !important; }
-    .contact_box { width:550px !important; margin-top:100px !important; }
-    span[class^='contact_text'] { font-size: 20px !important; margin-top: 50px !important; }
+    .contact_box { width:750px !important; margin:50px 0px 0px 100px !important; }
+    span[class^='contact_text'] { font-size: 20px !important; margin: 0px !important; }
     .reachme img {height: 60px !important; }
-
     .reachme a { padding-right:2.8vw;}
-
     .contact_second { margin:150px 100px 0px -50% !important; width:60% !important;
                       background-color: transparent !important;}
-    .contact_second svg { height: 130px !important; margin:0px 0px 0px -80px !important;
+    .contact_second svg { height: 130px !important; margin:50px 0px 0px -80px !important;
                           background-color: transparent !important; }
     .contact_second div[class^='h4'] { font-size:18px !important; margin:-120px 0px 0px 70px !important; }
     .contact_second div[class^='h4'] span[class^='the_text'] {font-size:40px !important; }
-
+    div[class^='h4'] span[class^='d_text'] { font-size: 16px !important; }
 }
 
 
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(15, 15, 15, 0.8);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(15, 15, 15, .8);
+  background-color: #555;
+}
+
 
 .sidenav {
   height: 100%;
