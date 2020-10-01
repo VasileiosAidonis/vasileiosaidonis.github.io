@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
-  background-color: #F2EDD7FF;
+  /* background-color: #F2EDD7FF; */
 }
 
 /* Media Queries: Tablet Landscape */
@@ -19,6 +19,7 @@
     .main { width:82% !important; height: auto !important; margin-left:20% !important; }
     .sidenav { width:20% !important; }
     .sidenav a { font-size:17px !important; }
+    div[class^="back1"] { background-size: cover !important; }
     .quotes2 { width:90% !important; padding-left: 30px !important; font-size: 20px !important;}
     .quotes { width:90% !important; font-size: 27px !important; }
     .h4 { width:90% !important; font-size: 14px !important; }
@@ -35,11 +36,13 @@
     .col-sm label { margin:0px !important; }
     .gallery img[class^='move']:hover {transform: translate(-250px, 0) !important; }
 
-    .contact_first div[class^='quotes2']{ display: none !important; }
-    .contact_box { width:750px !important; margin:50px 0px 0px 100px !important; }
-    span[class^='contact_text'] { font-size: 20px !important; margin: 0px !important; }
+    /* .contact_first div[class^='quotes2']{ display: none !important; } */
+    div[class^="back4"] { background-size: cover !important; }
+    .contact_box { margin:50px 0px 0px 100px !important; }
+    span[class^='contact_text'] { font-size: 20px !important; margin: 0px !important; color:#FFFFFF !important; }
     .reachme img {height: 60px !important; }
     .reachme a { padding-right:2.8vw;}
+    .git_img { 	content:url("images/git1.png") !important; }
     .contact_second { margin:150px 100px 0px -50% !important; width:60% !important;
                       background-color: transparent !important;}
     .contact_second svg { height: 130px !important; margin:50px 0px 0px -80px !important;
@@ -130,7 +133,7 @@ div[class^='col-lg'] div[class^='h4'] {
   position: relative;
   width: 14vw;
   height: 20px;
-  border: 2px  solid #9B8208;
+  border: 2px  solid #F2EDD7FF;
   border-radius: 1.2vw;
   margin-top: -1.4vw;
 }
@@ -142,7 +145,7 @@ div[class^='col-lg'] div[class^='h4'] {
   left: 0px;
   width: 10%;
   height: 100%;
-  background: #91111E;
+  background: #660000;
   transition: all 0.001s ease-in-out;
 }
 
@@ -203,6 +206,7 @@ div[class^='box']  {
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  background-color:transparent;
 }
 
 .box:hover .box-in {
@@ -214,6 +218,7 @@ div[class^='box']  {
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color:transparent;
 }
 
 .box-back {
@@ -248,15 +253,22 @@ div[class^='box']  {
 .reachme {
   background-color:transparent;
   width: 15vw;
+  margin-bottom: 1.5vw;
 }
 
 .reachme a {
   padding-right:2.8vw;
 }
+/**
+* To change git image color for media
+*/
+.git_img{
+	content:url("images/git2.png");
+}
 
 .contact_text {
   font-family:'Inter',sans-serif;
-  font-size:1.2vw;
+  font-size:1.3vw;
   font-weight:550;
 }
 
@@ -353,8 +365,8 @@ div[class^='first_row'] {
   width: 0.5vw;
   height: 0.5vw;
   border-radius: 0.25vw;
-  background-color: #151515;
-  color: #151515;
+  background-color: #FFFFFF;
+  color: #FFFFFF;
   animation: dotElasticAfter 1s infinite linear;
 }
 
